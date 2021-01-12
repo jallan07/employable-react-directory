@@ -1,6 +1,6 @@
 // components
 import React from 'react';
-// import Employee from './components/Employee';
+import Employees from './components/Employees';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 // router
@@ -14,7 +14,7 @@ function App() {
       <Route>
         <Navigation />
         <Header />
-        {/* <Employee /> */}
+        <Employees />
       </Route>
       {/* redirect any other page requests back to the home page for a true singlepage experience*/}
       <Redirect from="*" to="/" />

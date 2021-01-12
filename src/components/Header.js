@@ -6,7 +6,7 @@ const Header = () => {
     <Jumbotron className="row">
       <div className="container my-5 col-md-5 text-center">
         <h1>employ•able</h1>
-        <h4>A Simple Employee Table Directory</h4>
+        <h4>Employee Table Directory</h4>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information.
