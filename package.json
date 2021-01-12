@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
+    "bootswatch": "^4.5.3",
     "jquery": "^3.5.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
@@ -39,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://randomuser.me/"
 }
