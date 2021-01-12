@@ -26,12 +26,12 @@ const Employees = () => {
         {/* Set Table Headers */}
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Photo</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>Birthday</th>
+            <th className="text-center">ID</th>
+            <th className="text-center">Photo</th>
+            <th className="text-center">Name</th>
+            <th className="text-center">Phone</th>
+            <th className="text-center">Email</th>
+            <th className="text-center">Birthday</th>
           </tr>
         </thead>
         <tbody>
@@ -44,29 +44,29 @@ const Employees = () => {
             // reformate the date of birth for each employee (called in the dob column)
             const dateToFormat = employee.dob.date;
             return (
-              <tr key={id}>
+              <tr key={id} className="text-center">
                 {/* Assign a random number for their ID */}
-                <td>{id}</td>
-                <td>
+                <td className="align-middle text-center">{id}</td>
+                <td className="align-middle text-center">
                   {/* Add the profile image of employee, and set the alt tag to their name */}
                   <img
                     className="employee"
-                    src={employee.picture.large}
+                    src={employee.picture.medium}
                     alt={`Employee Profile | ${employee.name.first} ${employee.name.last}`}
                   ></img>
                 </td>
                 {/* Add the employee's name */}
-                <td>
+                <td className="align-middle text-center">
                   {employee.name.first} {employee.name.last}
                 </td>
                 {/* Add the employee phone number */}
-                <td>{employee.phone}</td>
+                <td className="align-middle text-center">{employee.phone}</td>
                 {/* Add the employee email address and make it clickable */}
-                <td>
+                <td className="align-middle text-center">
                   <a href={`mailto:${employee.email}`}>{employee.email}</a>
                 </td>
                 {/* Add the employee's date of birth in a month-day-year format using the react-moment package */}
-                <td>
+                <td className="align-middle text-center">
                   <Moment format="MMM DD, YYYY">{dateToFormat}</Moment>
                 </td>
               </tr>
