@@ -50,7 +50,8 @@ const Employees = () => {
                 <td>
                   {/* Add the profile image of employee, and set the alt tag to their name */}
                   <img
-                    src={employee.picture.thumbnail}
+                    className="employee"
+                    src={employee.picture.large}
                     alt={`Employee Profile | ${employee.name.first} ${employee.name.last}`}
                   ></img>
                 </td>

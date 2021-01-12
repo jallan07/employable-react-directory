@@ -2,7 +2,8 @@
 import React from 'react';
 import Employees from './components/Employees';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
+import Search from './components/Search';
+
 // router
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 // styles
@@ -12,8 +13,8 @@ function App() {
   return (
     <Router>
       <Route>
-        <Navigation />
         <Header />
+        <Search />
         <Employees />
       </Route>
       {/* redirect any other page requests back to the home page for a true singlepage experience*/}
