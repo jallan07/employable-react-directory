@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Table from 'react-bootstrap/Table';
 import generateUniqueId from 'generate-unique-id';
+import Moment from 'react-moment';
 
 const Employees = () => {
   // create the employees state object along with the setEmployees method
@@ -41,6 +42,9 @@ const Employees = () => {
               useLetters: false
             });
 
+            // reformate the date of birth
+            const dateToFormat = employee.dob.date;
+
             return (
               <tr key={id}>
                 {/* Assign a random number for their ID */}
@@ -62,7 +66,10 @@ const Employees = () => {
                 <td>
                   <a href={`mailto:${employee.email}`}>{employee.email}</a>
                 </td>
-                <td>{employee.dob.date}</td>
+                {/* Add the employee's date of birth in a month-day-year format using the react-moment package */}
+                <td>
+                  <Moment format="MMM DD, YYYY">{dateToFormat}</Moment>
+                </td>
               </tr>
             );
           })}
