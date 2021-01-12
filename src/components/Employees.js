@@ -26,7 +26,7 @@ const Employees = () => {
         {/* Set Table Headers */}
         <thead>
           <tr>
-            <th>Employee ID</th>
+            <th>ID</th>
             <th>Photo</th>
             <th>Name</th>
             <th>Phone</th>
@@ -41,10 +41,8 @@ const Employees = () => {
               length: 5,
               useLetters: false
             });
-
-            // reformate the date of birth
+            // reformate the date of birth for each employee (called in the dob column)
             const dateToFormat = employee.dob.date;
-
             return (
               <tr key={id}>
                 {/* Assign a random number for their ID */}
