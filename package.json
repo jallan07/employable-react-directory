@@ -10,6 +10,7 @@
     "bootstrap": "^4.5.3",
     "bootswatch": "^4.5.3",
     "generate-unique-id": "^2.0.1",
+    "gh-pages": "^3.1.0",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
@@ -20,6 +21,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +46,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://randomuser.me/"
+  "proxy": "https://randomuser.me/",
+  "homepage": "https://jallan07.github.io/employable-react-directory"
 }
