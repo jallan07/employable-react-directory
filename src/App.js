@@ -16,7 +16,7 @@ function App() {
         <Table />
       </Route>
       {/* redirect any other page requests back to the home page for a true singlepage experience*/}
-      <Redirect from="*" to="/" />
+      <Redirect from="*" to="/employable-react-directory/" />
     </Router>
   );
 }
