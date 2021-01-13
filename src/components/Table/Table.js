@@ -75,7 +75,7 @@ const TableContainer = () => {
 
   return (
     <div className="container">
-      <Search onChange={onChange} />
+      <Search onChange={onChange} records={employees.count} />
       <Table striped bordered hover id="employeeTable">
         <thead>
           <tr>

@@ -7,7 +7,7 @@ export default {
       axios
         // i want to get the following fields: picture, name, phone, email, dob
         .get(
-          'https://randomuser.me/api/?results=125&nat=us&inc=picture,name,phone,email,dob'
+          `https://randomuser.me/api/?results=134&nat=us&inc=picture,name,phone,email,dob`
         )
     );
   }
