@@ -8,7 +8,10 @@ const Search = () => {
         <InputGroup className="mb-4 col-md-10 mx-auto text-center">
           <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1">
-              <i class="fas fa-id-badge mr-3" style={{ fontSize: '3em' }}></i>
+              <i
+                className="fas fa-id-badge mr-3"
+                style={{ fontSize: '3em' }}
+              ></i>
             </InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl
