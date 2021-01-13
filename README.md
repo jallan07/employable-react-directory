@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# **Employ•able | A Simple Employee Table Directory Powered By React**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## **Description**
 
-In the project directory, you can run:
+Employable allows users to search through the mock database of employees and filter them out by name, email, or phone number. It also allows for column sorting in the name or age column.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **Table of Contents**
 
-The page will reload if you make edits.\
-You will also see any lint errors in your console.
+1. [Installation](#Installation)
+2. [Technologies](#Technologies)
+3. [Usage](#Usage)
+4. [License](#License)
+5. [Contributions](#Contributions)
+6. [Tests](#Tests)
+7. [Questions](#Questions)
+8. [Author](#Author)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Installation**
 
-### `npm run build`
+1. Clone the repo: `git clone https://github.com/jallan07/employable-react-directory.git`
+2. Install NPM packages: `npm i`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Technologies**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. React.js
+2. React-router-dom
+3. React-bootsrap/bootswatch
+4. Axios
+5. Generate-unique-id
+6. Moment
+7. React Hooks (useState, useEffect)
+8. Javascript
+9. HTML/CSS
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Usage**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+N/A
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## **License**
 
-## Learn More
+Distributed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## **Contributions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Current Contributors:**
 
-### Analyzing the Bundle Size
+_Josh Allan_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-### Making a Progressive Web App
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ***
 
-### Advanced Configuration
+## **Tests**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This application has been tested in a countless number of different environments to ensure peak performance. However, bugs may exist, especially when used in combination with additional packages. Please be sure to test the application after an initial download.
 
-### Deployment
+To test run the code after installing on your local device, use the following code:
+`N/A`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## **Questions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The following questions exist on our end, and are currently trying to be solved:
+
+N/A
+
+---
+
+## **Author**
+
+Below is contact information for the author of this application. Please feel free to reach out directly if additional questions exist.
+
+- Name: Josh Allan
+- Email: allan.josh07@gmail.com
+- LinkedIn: https://www.linkedin.com/in/joshuamallan/
+
+---
+
+### Thank you for using Employ•able | A Simple Employee Table Directory Powered By React!
