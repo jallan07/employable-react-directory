@@ -42,10 +42,17 @@ const TableContainer = () => {
     // if it's currently unsorted, then we want to sort ascending order
     // if its currently sorted, then we want to sort descending order
     employees.sort((a, b) => {
+      // ascending sort
       if (a.name.first < b.name.first) {
         return -1;
-      } else {
-        return 1;
+      }
+      // descending order
+      else if (b.name.first > a.name.first) {
+        return -1;
+      }
+      // no sort
+      else {
+        return 0;
       }
     });
     setSort(...employees);

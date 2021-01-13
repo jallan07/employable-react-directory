@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+.subheading {
+  font-size: 18px;
+}
+
+td {
+  font-size: 16px;
+}
+
+.form-control {
+  font-size: 18px !important;
+}
+
 img.employee {
   border-radius: 50%;
 }
