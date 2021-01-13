@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputGroup, FormControl } from 'react-bootstrap/';
 
-const Search = () => {
+const Search = ({ onChange }) => {
   return (
     <div className="container">
       <div className="row justify-content-md-center">
@@ -15,6 +15,7 @@ const Search = () => {
             </InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl
+            onChange={onChange}
             placeholder="Search"
             aria-label="Search"
             aria-describedby="basic-addon1"
