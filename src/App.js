@@ -1,8 +1,8 @@
 // components
 import React from 'react';
-import TableContainer from './components/table/TableContainer';
+import TableContainer from './components/Table/TableContainer';
 import Header from './components/Header';
-import Search from './components/Search';
+import Search from './components/Search/Search';
 
 // router
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
