@@ -10,6 +10,8 @@ const TableContainer = () => {
   const [searchState, setSearch] = useState('');
   // create the employees state object along with the setEmployees method
   const [employees, setEmployees] = useState([]);
+  // create the sortState object along with the setSort method
+  const [sortState, setSort] = useState([]);
   // when the component loads, run the api call
   useEffect(() => {
     API.getData().then(({ data }) => {
@@ -34,20 +36,53 @@ const TableContainer = () => {
     setSearch(e.target.value);
   }
 
+  function sortName() {
+    // access the employees array
+    // sort the employees array by the column specified upon click
+    // if it's currently unsorted, then we want to sort ascending order
+    // if its currently sorted, then we want to sort descending order
+    employees.sort((a, b) => {
+      if (a.name.first < b.name.first) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
+    setSort(...employees);
+  }
+
+  function sortAge() {
+    // access the employees array
+    // sort the employees array by the column specified upon click
+    // if it's currently unsorted, then we want to sort ascending order
+    // if its currently sorted, then we want to sort descending order
+    employees.sort((a, b) => {
+      if (a.dob.age < b.dob.age) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
+    setSort(...employees);
+  }
+
   return (
     <div className="container">
       <Search onChange={onChange} />
       <Table striped bordered hover id="employeeTable">
         <thead>
           <tr>
-            <th className="text-center" onClick={() => {}}>
-              ID
-            </th>
+            <th className="text-center">ID</th>
             <th className="text-center">Photo</th>
-            <th className="text-center">Name</th>
+            <th className="text-center sort" onClick={sortName}>
+              Name <i className="fas fa-sort"></i>
+            </th>
             <th className="text-center">Phone</th>
             <th className="text-center">Email</th>
             <th className="text-center">Birthday</th>
+            <th className="text-center sort" onClick={sortAge}>
+              Age <i className="fas fa-sort"></i>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -85,6 +120,7 @@ const TableContainer = () => {
                 <td className="align-middle text-center">
                   <Moment format="MMM DD, YYYY">{dateToFormat}</Moment>
                 </td>
+                <td className="align-middle text-center">{employee.dob.age}</td>
               </tr>
             );
           })}
