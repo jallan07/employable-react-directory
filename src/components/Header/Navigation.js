@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <Navbar className="navigationbar" bg="primary" expand="lg">
       <div className="container">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand className="navbrand" href="#home">
           Employ <i class="fas fa-user-circle fa-xs"></i> able
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
