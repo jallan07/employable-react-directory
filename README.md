@@ -1,5 +1,7 @@
 # **Employ•able | A Simple Employee Table Directory Powered By React**
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/999db957-12e9-4ea2-80ec-c455311b4264/deploy-status)](https://app.netlify.com/sites/employable-react-directory/deploys)
+
 ---
 
 ## **Description**
