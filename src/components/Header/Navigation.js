@@ -6,7 +6,7 @@ function Navigation() {
     <Navbar className="navigationbar" bg="primary" expand="lg">
       <div className="container">
         <Navbar.Brand className="navbrand" href="#home">
-          Employ <i class="fas fa-user-circle fa-xs"></i> able
+          Employ <i className="fas fa-user-circle fa-xs"></i> able
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

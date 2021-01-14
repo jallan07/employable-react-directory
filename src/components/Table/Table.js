@@ -11,7 +11,10 @@ const TableContainer = () => {
   // create the employees state object along with the setEmployees method
   const [employees, setEmployees] = useState([]);
   // create the sortState object along with the setSort method
-  const [sortState, setSort] = useState([]);
+  const [sortState, setSort] = useState({
+    order: 'asc'
+  });
+
   // when the component loads, run the api call
   useEffect(() => {
     API.getData().then(({ data }) => {
@@ -37,40 +40,47 @@ const TableContainer = () => {
   }
 
   function sortName() {
-    // access the employees array
-    // sort the employees array by the column specified upon click
-    // if it's currently unsorted, then we want to sort ascending order
-    // if its currently sorted, then we want to sort descending order
-    employees.sort((a, b) => {
-      // ascending sort
-      if (a.name.first < b.name.first) {
-        return -1;
-      }
-      // descending order
-      else if (b.name.first > a.name.first) {
-        return -1;
-      }
-      // no sort
-      else {
-        return 0;
-      }
-    });
-    setSort(...employees);
+    // if the state is descending, then sort ascending and set state to ascending
+    if (sortState.order === 'desc') {
+      employees.sort((a, b) => {
+        if (a.name.first < b.name.first) {
+          return -1;
+        }
+        return setSort({ order: 'asc' });
+      });
+    }
+    // if the state is ascending, then sort descending and set state to descending
+    if (sortState.order === 'asc') {
+      employees.sort((a, b) => {
+        // descending order
+        if (a.name.first > b.name.first) {
+          return -1;
+        }
+        return setSort({ order: 'desc' });
+      });
+    }
   }
 
   function sortAge() {
-    // access the employees array
-    // sort the employees array by the column specified upon click
-    // if it's currently unsorted, then we want to sort ascending order
-    // if its currently sorted, then we want to sort descending order
-    employees.sort((a, b) => {
-      if (a.dob.age < b.dob.age) {
-        return -1;
-      } else {
-        return 1;
-      }
-    });
-    setSort(...employees);
+    // if the state is descending, then sort ascending and set state to ascending
+    if (sortState.order === 'desc') {
+      employees.sort((a, b) => {
+        if (a.dob.age < b.dob.age) {
+          return -1;
+        }
+        return setSort({ order: 'asc' });
+      });
+    }
+    // if the state is ascending, then sort descending and set state to descending
+    if (sortState.order === 'asc') {
+      employees.sort((a, b) => {
+        // descending order
+        if (a.dob.age > b.dob.age) {
+          return -1;
+        }
+        return setSort({ order: 'desc' });
+      });
+    }
   }
 
   return (
