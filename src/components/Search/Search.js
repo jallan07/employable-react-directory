@@ -9,8 +9,8 @@ const Search = ({ onChange }) => {
           <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1">
               <i
-                className="fas fa-id-badge mr-3"
-                style={{ fontSize: '3em' }}
+                className="fas fa-user-circle"
+                style={{ fontSize: '1.6em' }}
               ></i>
             </InputGroup.Text>
           </InputGroup.Prepend>

@@ -7,6 +7,20 @@
   pointer-events: none;
 }
 
+.navigationbar {
+  height: 10vh;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.jumbotron {
+  width: 100vw;
+  margin: 0 auto;
+}
+
 .subheading {
   font-size: 18px;
 }
