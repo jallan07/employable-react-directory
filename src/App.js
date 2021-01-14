@@ -4,7 +4,7 @@ import Table from './components/Table/Table';
 import Header from './components/Header/Header';
 
 // router
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 // styles
 import './App.css';
 
@@ -15,6 +15,7 @@ function App() {
         <Header />
         <Table />
       </Route>
+      <Redirect path="/*" to="/" />
     </Router>
   );
 }
