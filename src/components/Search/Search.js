@@ -5,7 +5,7 @@ const Search = ({ onChange }) => {
   return (
     <div className="container">
       <div className="row justify-content-md-center">
-        <InputGroup className="mb-4 col-md-8 mx-auto text-center">
+        <InputGroup className="mt-5 mb-4 col-md-8 mx-auto text-center">
           <InputGroup.Prepend>
             <InputGroup.Text id="basic-addon1">
               <i
